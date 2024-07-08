@@ -1,0 +1,116 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.background {
+  background-image: url("/assets/images/Background-img.png");
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.columns {
+  margin-top: 190px;
+}
+
+.column.is-4 {
+  background: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.column.is-8 {
+  background: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button.is-link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#login-box,
+#signup-box {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#content-box {
+  margin-top: 20px;
+  min-height: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Chris adding Park Lane font */
+
+@font-face {
+  font-family: "Park Lane";
+  src: url("/assets/fonts/ParkLaneNF.otf") format("opentype");
+}
+
+#parklaneFont {
+  font-family: "Park Lane", sans-serif;
+}
+
+.large-letter::first-letter {
+  font-size: larger;
+}
+
+.logout-containter {
+  position: relative;
+  float: right;
+}
+
+.poster {
+  width: 100px;
+}
+
+#movie-search {
+  width: 200px;
+}

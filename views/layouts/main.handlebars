@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <title>Silver Screenr</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/SilverScreenrFavicon.jpg" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="hero is-small is-dark">
+        <div class="hero-body">
+            {{!-- Chris added Parklane font to CSS and Id for line 18 and 21--}}
+            <p class="title large-letter" id="parklaneFont">
+                Silver Screenr
+            </p>
+            <p class="subtitle large-letter" id="parklaneFont">
+                Your online cinema center
+            </p>
+        </div>
+        <div class="logout-containter">
+            {{> login-logout}}
+            {{> searchbar}}
+
+    </section>
+
+
+
+    {{{body}}}
+
+</body>
+
+
+
+{{> footer}}
+
+</html>

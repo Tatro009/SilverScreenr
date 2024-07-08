@@ -1,0 +1,7 @@
+<!-- Display login form if not authenticated -->
+{{#if loggedIn}}
+<button id="logout">Logout</button>
+<script src="/assets/js/logout.js"></script>
+{{else}}
+<a href="/login">Login</a>
+{{/if}}

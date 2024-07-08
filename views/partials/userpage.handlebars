@@ -1,0 +1,51 @@
+<!-- Display user information if authenticated -->
+<p>Welcome, {{user.username}}!</p>
+
+
+<!-- Add section for user ratings -->
+<section class="user-ratings">
+    <h2>Your Ratings</h2>
+    {{#if userRatings.length}}
+    <ul>
+        {{#each userRatings}}
+        <div>
+            <img src="https://image.tmdb.org/t/p/w500/{{movie_data.poster_path}}" alt="{{movie_data.title}} Poster"
+                class="poster" data-movie-id="{{id}}">
+
+
+
+            <li>{{movie_data.title}} - Rated
+
+
+                {{#if user_rating}}
+                <input id="rating-input-{{id}}" style="width: 40px;" type="number" value="{{user_rating}}">
+            {{else}}
+            <input id="rating-input-{{id}}" style="width: 40px;" type="number" min="0" max="5" placeholder="0 to 5 stars">
+            {{/if}}
+            stars
+            </li>
+
+
+
+            <label for="comment-input">Movie Comments</label>
+
+            {{#if user_comment}}
+            <input type="text" style="width: 400px;" id="comment-input-{{id}}" value="{{user_comment}}">
+            {{else}}
+            <input type="text" style="width: 400px;" id="comment-input-{{id}}" placeholder="Enter Your comment here">
+            {{/if}}
+
+            <button class="button is-link is-light login-form" id="{{id}}">
+                Submit Comment
+            </button>
+
+
+        </div>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>No ratings yet! Start rating movies!</p>
+    {{/if}}
+</section>
+
+<script src="./assets/js/comment.js"></script>

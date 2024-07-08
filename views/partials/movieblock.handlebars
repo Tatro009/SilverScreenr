@@ -1,0 +1,25 @@
+<div class="column is-multiline is-mobile">
+    <div class="card">
+        <div class="card-image">
+            <figure class="image is-3">
+                <img src="https://image.tmdb.org/t/p/w500/{{poster_path}}" alt="{{title}} Poster" class="poster" data-movie-id="{{id}}">
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="media">
+                <div class="media-content">
+                    <p class="title is-3">{{title}}</p>
+                    <p class="subtitle is-3">{{release_date}}</p>
+                    <p class="subtitle is-3">{{overview}}</p>
+                    <a href="../add/{{id}}">Add to watchlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+    <!-- Add a link to view more details or rank the movie -->
+    {{!-- {{#if loggedIn}} --}}
+    
+    {{!-- {{else}} --}}
+    {{!-- <a href="/login">Login to rate this movie</a> --}}
+    {{!-- {{/if}} --}}

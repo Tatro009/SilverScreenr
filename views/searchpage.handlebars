@@ -1,0 +1,17 @@
+<div class="background">
+    <div class="columns">
+        <div class="column is-8" id="content-box">
+            <section class="search-results">
+                <h2>Search Results</h2>
+                <!-- Display a list of movies with their details -->
+                {{#each searchResults}}
+                {{> movieblock}}
+                {{!-- Moving the link below to the search results card - CR --}}
+                {{!-- <a href="../add/{{id}}">Add to watchlist</a> --}}
+
+
+                {{/each}}
+            </section>
+        </div>
+    </div>
+</div>
